@@ -9,7 +9,7 @@
 
 ## Configuring Manager and Kubespray
 Additional notes and instructions can be found within Kubespray's own docs:
-https://github.com/mrbobbytables/kubespray/blob/master/docs/ansible.md
+https://github.com/kubernetes-incubator/kubespray/blob/master/docs/ansible.md
 
 Install pip as appropriate to the host OS. e.g. For CentOS
 
@@ -28,10 +28,9 @@ pip install ansible netaddr
 
 Clone the fork of kubespray and checkout the branch with `keepalived-cloud-provider` support
 
-```th
-git clone https://github.com/mrbobbytables/kubespray.git
+```
+git clone https://github.com/kubernetes-incubator/kubespray.git
 cd kubespray
-git checkout feature-keepalived-cloud-provider
 ```
 
 Prepare the Ansible host Inventory in `inventory/inventory.ini` using the example file `inventory/inventory.example` as a reference. When complete, it should look similar to this:
